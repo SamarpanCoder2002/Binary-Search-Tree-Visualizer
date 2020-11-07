@@ -132,19 +132,19 @@ class BST:
         self.take_input.place_forget()
         self.take_entry.place_forget()
         self.add_btn.place_forget()
-
-        if int(self.take_entry.get()):
-                if indicator == 1:
-                    if  len(self.node_number_value_store) == 0:
-                        self.make_null.place_forget()# For forget the NULL label
-                    self.make_default_node_with_set_position()
-                else:
-                    if self.node_number_value_store:# Delete available for only non empty Tree
-                       self.delete()
+        try:
+            if int(self.take_entry.get()):
+                    if indicator == 1:
+                        if  len(self.node_number_value_store) == 0:
+                            self.make_null.place_forget()# For forget the NULL label
+                        self.make_default_node_with_set_position()
                     else:
-                       messagebox.showerror("Empty BST", "Nothing to delete is BST")
-
-
+                        if self.node_number_value_store:# Delete available for only non empty Tree
+                           self.delete()
+                        else:
+                           messagebox.showerror("Empty BST", "Nothing to delete is BST")
+        except:
+            messagebox.showerror("Input Error", "Input value must be integer")
 
         self.input_btn_activation()
 
@@ -218,7 +218,6 @@ class BST:
             print("Some force stop error")
 
     def make_arrow(self):# Connect current node and parent node connect line
-        print("In arrow make")
         if self.notation_index == 0:
            self.take_arrow = -1
         else:
@@ -433,7 +432,6 @@ class BST:
             self.value_show[self.display_box_counter].config(text=control_node[2])
             control_node[1].config(bg="red",fg="black")
             self.window.update()
-            print(control_node[2], end=" ")
             time.sleep(0.8)
             self.window.update()
 
@@ -451,7 +449,6 @@ class BST:
             self.value_show[self.display_box_counter].config(text=control_node[2])
             control_node[1].config(bg="yellow", fg="green")
             self.window.update()
-            print(control_node[2], end=" ")
             time.sleep(0.8)
             self.window.update()
 
@@ -469,7 +466,6 @@ class BST:
             self.value_show[self.display_box_counter].config(text=control_node[2])
             control_node[1].config(bg="violet", fg="blue")
             self.window.update()
-            print(control_node[2], end=" ")
             time.sleep(0.8)
             self.window.update()
 
@@ -484,7 +480,6 @@ class BST:
                 self.value_show[self.display_box_counter].config(text=take[2])
                 take[1].config(bg="orange", fg="green")
                 self.window.update()
-                print(take[2], end=" ")
 
                 if take[5] is not None:
                     self.temp_queue.append(take[5])
@@ -567,9 +562,6 @@ class BST:
                     messagebox.showwarning("Not found","Sorry,targeting value not found")
                     break
                 if int(node[2]) == int(val):# For node found and get out from that loop
-                    print(node[2])
-                    if p_node:
-                        print(p_node[2])
                     break
                 if int(val)>int(node[2]):# For right side check
                     p_node=node
@@ -592,7 +584,6 @@ class BST:
                     self.left_none_right_exist(node)
 
                 if len(self.node_number_value_store) == 0:# When all node deleted some initialization
-                    print("All node deleted")
                     self.notation_index = 0
                     self.make_null.place(x=565, y=90 + 50)
 
@@ -623,7 +614,6 @@ class BST:
         self.status_note.place(x=550, y=130)
 
     def left_none_right_exist(self,node):
-        print(self.node_number_value_store)
         p_temp = None
         temp = node[6]
         left_side_existence_checking_of_one_side_down_label_node=0
@@ -651,22 +641,16 @@ class BST:
             while True:
                 p_temp[2]=temp[2]
                 p_temp[1].config(text=temp[2])
-                print("p_temp: ",p_temp[2],"temp: ",temp[2])
                 if  temp[6]:
                     p_temp=temp
                     temp=temp[6]
-                    if temp[5]:
+                    if  temp[5]:
                         temp1 = temp[5]
                         temp[5] = None
-                        if temp1 in self.node_number_value_store:
-                            print("yes sam")
                 else:
                     break
 
-            print(p_temp)
             p_temp[6] = None
-            print(p_temp)
-            print(temp)
 
             if temp1:
                 take_temp1_val = temp1[2]
@@ -704,7 +688,6 @@ class BST:
         print(self.node_number_value_store)
 
     def right_none_left_exist(self, node):
-        print(self.node_number_value_store)
         p_temp = None
         temp = node[5]
         right_side_existence_checking_of_one_side_down_label_node = 0
@@ -733,7 +716,6 @@ class BST:
             while True:
                 p_temp[2] = temp[2]
                 p_temp[1].config(text=temp[2])
-                print("p_temp: ", p_temp[2], "temp: ", temp[2])
                 if  temp[5]:
                     p_temp = temp
                     temp = temp[5]
@@ -743,10 +725,7 @@ class BST:
                 else:
                     break
 
-            print(p_temp)
             p_temp[5] = None
-            print(p_temp)
-            print(temp)
 
             if temp1:
                 take_temp1_val = temp1[2]
