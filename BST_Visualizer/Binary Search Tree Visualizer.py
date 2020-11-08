@@ -510,6 +510,7 @@ class BST:
             top.geometry("1080x600")
             top.maxsize(1080, 600)
             top.minsize(1080, 600)
+            top.iconbitmap("bst_icon.ico")
             queue_obj = CQ.CircularQueue(top)
             node_data_store_to_access_easily = []
             node_data_store_to_access_easily.append(self.node_number_value_store[0])
@@ -851,5 +852,6 @@ if __name__ == '__main__':
     window.maxsize(1350,720)
     window.minsize(1350,720)
     window.config(bg="orange")
+    window.iconbitmap("bst_icon.ico")
     BST(window)
     window.mainloop()
