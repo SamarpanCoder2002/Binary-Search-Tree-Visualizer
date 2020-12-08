@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Python_Version-3.7-blue.svg)
 ![](https://img.shields.io/badge/Status-Complete-green.svg)
 
-### <p align="center">Hello Programmers, Here I made `Binary Search Tree Visualizer` using `Python Tkinter` </p>
+## <p align="center">Hello Programmers, Here I made `Binary Search Tree Visualizer` using `Python Tkinter` </p>
 
 <p align="center"> <img alt="GIF" height="400px"  width="500px" src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif"/><br></p>
 
