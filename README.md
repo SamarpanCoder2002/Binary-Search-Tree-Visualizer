@@ -1,7 +1,9 @@
-<p align="center"> ![](https://img.shields.io/badge/Programming_Language-Python-blue.svg)
+<p align="center"> 
+![](https://img.shields.io/badge/Programming_Language-Python-blue.svg)
 ![](https://img.shields.io/badge/Tool_Used-Tkinter-orange.svg)
 ![](https://img.shields.io/badge/Python_Version-3.7-blue.svg)
-![](https://img.shields.io/badge/Status-Complete-green.svg)</p>
+![](https://img.shields.io/badge/Status-Complete-green.svg)
+</p>
 
 #### <p align="center">Hello Programmers, Here I made `Binary Search Tree Visualizer` using `Python Tkinter` </p>
 
