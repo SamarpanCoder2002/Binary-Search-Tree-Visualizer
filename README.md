@@ -18,7 +18,7 @@
 ### ➡️ 6. Level-Order-Traversal in the Binary Search Tree
 ### ➡️ 7. Level-Order-Traversal-Logic-Visualization Using the Circular Queue</p>
 ---
-## Click on the Star If You Love This Project and Follow me on GitHub To Get New Poject Updates
+## 💡 Click on the Star If You Love This Project and Follow me on GitHub To Get New Poject Updates
 ---
 # <p align="left">
 - ###  [Click Here To See the Project Video](https://youtu.be/9MZDMAiR24I "LCO")
