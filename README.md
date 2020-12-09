@@ -9,7 +9,7 @@
 
 ---
 
-## <p align="left"> ***_💡 Functionality I Provide Here---->_***
+# ***_<p align="left"> 💡 Functionality I Provide Here---->_***
 ### ➡️ 1. Insertion in the Binary Search Tree
 ### ➡️ 2. Deletion in the Binary Search Tree
 ### ➡️ 3. Pre-Order-Traversal in the Binary Search Tree
