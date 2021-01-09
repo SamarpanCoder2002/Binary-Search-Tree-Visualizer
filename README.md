@@ -5,7 +5,7 @@
 
 ## <p align="center">Hello Programmers, Here I made</p> <p align="center">Binary Search Tree Visualizer</p> <p align="center">using</p> <p align="center">Python Tkinter</p> 
 
-<p align="center"> <img alt="GIF" height="400px"  width="500px" src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif"/><br></p>
+<p align="center"> <img alt="GIF" height="400px"  width="500px" src="bst_gif.gif"/><br></p>
 
 ---
 
