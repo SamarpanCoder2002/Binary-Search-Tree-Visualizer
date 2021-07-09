@@ -6,7 +6,7 @@
 ![](https://img.shields.io/badge/Status-Complete-green.svg)
 
 
-# <p align="center">Hello Programmers,</p> <p align="center">Here I made Binary Search Tree Visualizer using Python Tkinter
+# <p align="center">Hello Developers,</p> <p align="center">Here I made Binary Search Tree Visualizer using Python Tkinter
 
 <p align="center"> <img alt="GIF" height="500px"  width="800px" src="bst_gif.gif"/><br></p>
 
